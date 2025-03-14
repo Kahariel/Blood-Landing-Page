@@ -30,3 +30,16 @@ var x = setInterval(function() {
     document.getElementById("date").innerHTML = "RELEASED!";
   }
 }, 1000);
+
+function contactUs() {
+  var email = document.getElementById("email");
+  var message = document.getElementById("message");
+  var alert = document.getElementById("alert");
+
+  if (!email || !message) {
+    alert("Please insert your email and message!");
+    return
+  }
+
+  alert.style.display = "block";
+}

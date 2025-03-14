@@ -35,3 +35,9 @@
   border-radius: 5px;
   font-weight: bold;
 }
+
+#logged {
+  margin-top: 50px;
+  display: none;
+  justify-content: center;
+}

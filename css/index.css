@@ -29,8 +29,8 @@ body {
   font-size: xx-large;
 }
 
-.nav a {
-  margin-right: 20px;
+.nav a, .nav span {
+  margin-right: 10px;
   text-decoration: none;
   color: white;
   padding: 10px 15px;
@@ -60,6 +60,9 @@ body {
 }
 
 .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 50px;
 }
 
@@ -156,6 +159,7 @@ body {
 
 .blog-content {
   display: flex;
+
   text-align: center;
 }
 
@@ -222,4 +226,26 @@ body {
 
 #special-ka:hover img {
   transform: scale(1.1);
+}
+
+.alert {
+  display: none;
+  padding: 20px;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
 }
